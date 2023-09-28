@@ -13,10 +13,14 @@
 .nav-Link{
     color:#fff;
 }
+.navbar-toggler{
+    margin-top: -44px;
+}
 
 .img{
     max-width: auto;
     max-height:auto;
+    padding-left: 200px;
 }
 
 .carousel-inner {
@@ -80,8 +84,8 @@
     color: #fff; /* Text color for the footer */
     padding: 10px 10px; /* Adjust padding as needed */
     padding-top: 50px;
-    padding-bottom: 50px;
-    margin-top: 70px;
+    padding-bottom: 0px;
+    margin-top: 0px;
 }
 
 .footer h4 {
@@ -90,6 +94,7 @@
 
 .footer p, .footer ul {
     font-size: 16px;
+    font-family:'Courier New', Courier, monospace;
 }
 
 .footer a {
