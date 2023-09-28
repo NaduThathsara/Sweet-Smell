@@ -80,19 +80,31 @@
             }
 
 
-            .navbar-toggler.collapsed .navbar-toggler-text {
-                order: 100;
-            }
-
             /* Adjust the margin to create spacing */
             .navbar-toggler-text {
                 margin-left: 100px;
         
             }   
+            .navbar-logo {
+                width: 80px; /* Set a fixed width for the logo */
+                height: 0px; /* Set a fixed height for the logo */
+            }
+
+            /* To center the logo vertically within the navbar */
+            .navbar-brand {
+                display: flex;
+                align-items: center;
+            }
+
+            /* Custom CSS for logo */
+            .navbar-brand img {
+                max-width: 100%; /* Set a maximum width for the logo */
+                height: auto; /* Allow the height to adjust proportionally */
+            }
             
             .row{
-                margin-right: 20px;
-                margin-bottom: 30px;
+                margin-right: 1px;
+                margin-bottom: 0px;
             }
 
             .payments{
@@ -104,6 +116,22 @@
             }
             .with{
                 font-size: larger;  
+            }
+            .card{
+                border: 3px solid #ae2c4d ;
+                box-shadow: #333;
+                margin-left: 24px;
+                margin-right: -188px;
+                margin-top: -30px;
+                margin-bottom: 150PX;
+                padding-left: 40px;
+                padding-right: 40px;
+                padding-top: -15px;
+                padding-bottom: -30px;
+            }
+            .container{
+                max-width: 1000px;
+                max-height:1000px;
             }
             .fb_icon_design{
                 height:20px;
@@ -135,49 +163,15 @@
     </head>
 
     <body style="height: 1000px">
-        <!-- <section class="header">
-            <nav class="navbar navbar-expand-lg fixed-top navbar-dark ">
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-                        <a class="navbar-brand" href="#">
-                            <img src="logo.png" alt="Logo" width="80" height="80" > 
-                        </a>
-                         <ul class="navbar-nav ms-auto">
-                            <li class="nav-item active">
-                                <a class="nav-link" href="contact-us.html">Contact Us</a>
-                            </li>
-                            <li class="nav-item active">
-                                <a class="nav-link" href="about-us.html">About Us</a>
-                            </li>   
-                        </ul>  
-                    </div>
-                            
-                        <ul class="navbar-nav ml-auto mb-2 mb-lg-2">
-                            <li class="nav-item active">
-                                <a class="nav-link" href=""><i class="bi bi-cart-fill"></i></a>
-                            </li>
-                            <li class="nav-item active">
-                                <a class="nav-link" href=""><i class="bi bi-heart-fill"></i></a>
-                            </li>
-                            <li class="nav-item active">
-                                <a class="nav-link" href="login.html">Login</a>
-                            </li>
-                        </ul>
-                     
-                </div>
-            </nav>    
-        </section> -->
         <section class="header">
             <nav class="navbar navbar-expand-lg fixed-top navbar-dark " style="width:80%;">
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
+                    <a class="navbar-brand" href="#">
+                        <img src="logo.png" alt="Logo" width="75" height="50" margin-top:0; > 
+                    </a>
                     <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-                        <a class="navbar-brand" href="#">
-                            <img src="logo.png" alt="Logo" width="80" height="80" > 
-                        </a>
                          <ul class="navbar-nav ms-auto">
                             <li class="nav-item active">
                                 <a class="nav-link" href="contact-us.html">Contact Us</a>
@@ -186,21 +180,8 @@
                                 <a class="nav-link" href="about-us.html">About Us</a>
                             </li>   
                         </ul>  
-                    </div>
-                            <!-- <div>
-                        <ul class="navbar-nav ml-auto mb-2 mb-lg-2">
-                            <li class="nav-item active">
-                                <a class="nav-link" href=""><i class="bi bi-cart-fill"></i></a>
-                            </li>
-                            <li class="nav-item active">
-                                <a class="nav-link" href=""><i class="bi bi-heart-fill"></i></a>
-                            </li>
-                            <li class="nav-item active">
-                                <a class="nav-link" href="login.html">Login</a>
-                            </li>
-                        </ul>
-                    </div> -->
-            </nav>    
+                    </div>        
+                </nav>    
             <nav class="navbar navbar-expand-lg fixed-top navbar-dark " style="width:20%; float:right;margin-left:80%;">
                 <ul class="navbar-nav ml-auto mb-2 mb-lg-2">
                     <li class="nav-item active">
@@ -214,7 +195,7 @@
                     </li>
                 </ul>
             </nav>
-    </section>
+        </section>
 
         <!-- Image Carousel -->
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -301,7 +282,7 @@
         </div>
 
         <!-- Payment Options Section -->
-        <div class="container-fluid payment-options" style="background-color:#eb6d822a; padding: 80px 0; margin-top: 20px">
+        <div class="container-fluid payment-options" style="background-color:#eb6d822a; padding: 80px 0; margin-top: 65px">
             <div class="container">
                 <div class="row">
                     <div class="col-md-4">
@@ -331,17 +312,18 @@
             <div class="row">
                 <div class="col-md-4">
                     <!-- Add an image with a source (src) attribute -->
-                    <img src="assets/p1.jpg" alt="Image Alt Text" width="400" height="400">
+                    <img src="assets/p1.jpg" alt="Image Alt Text" width="500" height="500">
                 </div>
                 <div class="col-md-6">
                 <!-- Add a paragraph -->
-                    <!-- <p class="with">With a rich heritage of over 20 years, Sweet Smell offers premium greenhouse-grown flowers to harness the diverse floral requirements of our clients</p> -->
+                    
                     <div class="row paragraph-panel-body">
                         <div class="col-md-12">
                             <div class="panel">
                                 <div class="card">
                                     <div class="card-body">
                                         <p class="with">
+                                            <h4 class="payments">Sweet Smell</h4>
                                             With a rich heritage of over 20 years, Sweet Smell offers premium greenhouse-grown flowers to harness the diverse floral requirements of our clients
                                         </p>
                                     </div>
@@ -359,9 +341,10 @@
                 <div class="row">
                     <div class="col-md-4">
                         <h4>Contact</h4>
-                        <p>Huejay Court, No. 32B, Sir Mohamed Macan Marker Mw, Colombo 03 Sri Lanka.</p>
-                        <p>011-2001122</p>
-                        <p>sweet@smileflower.com</p>
+                        <p>Sir Mohamed Macan Marker Mw, Colombo 03<br>
+                         Sri Lanka.
+                        011-2001122<br>
+                        sweet@smileflower.com</p>
                     </div>
                     <div class="col-md-4">
                         <h4>About Us</h4>
@@ -381,17 +364,7 @@
                         <div class="row">
                             <div class="col-md-12">
                                 <h5>Follow Us</h5>
-                                <!-- <ul class="list-unstyled list-inline">
-                                    <li class="list-inline-item">
-                                        <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                                    </li>
-                                    <li class="list-inline-item">
-                                        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
-                                    </li>
-                                    <li class="list-inline-item">
-                                        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
-                                    </li>
-                                </ul> -->
+                                
                             </div>
                             <div class="col-md-12">
                                 <div class="row">
@@ -401,12 +374,13 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
                     </div>
                 </div>
             </div>
         </footer>
 
+        <!-- jQuery library (required for Bootstrap) -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
