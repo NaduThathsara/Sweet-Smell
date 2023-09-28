@@ -1,0 +1,21 @@
+body{
+    margin:0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(v855-techi-nunoon-29.jpg) no-repeat center/cover;
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+}
+
+p{
+    text-align: center ;
+    margin-left: 100px;
+    margin-right: 100px;
+    text-emphasis-style:inherit;
+}
